@@ -2,7 +2,9 @@
 $version
 if [ $1 -eq 9 ];
 then
-version="9.0.70"
+
+#todo fix version
+version="9.0.71"
 else
 version="10.0.27"
 fi
@@ -20,4 +22,4 @@ rm apache-tomcat-${version}.tar.gz
 # Change permission
 sudo chmod -R 755 /opt/tomcat9/
 
-source deployer-installer.sh
+sh deployer-installer.sh
